@@ -33,7 +33,6 @@ function loadTemplateView($viewName, $params = array()) {
     $exitTime = $workingHours->getExitTime()->format('H:i:s');
     $activeClock = $workingHours->getActiveClock();
 
-
     require_once(TEMPLATE_PATH . "/header.php");
     require_once(TEMPLATE_PATH . "/left.php");
     require_once(VIEW_PATH . "/{$viewName}.php");
